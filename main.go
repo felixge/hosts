@@ -33,6 +33,9 @@ func run() error {
 
 	var block, update bool
 	flag.Parse()
+
+	// TODO(fg) implement "add", "edit" and "remove" commands, for now I just
+	// do this manually via vim.
 	switch cmd := flag.Arg(0); cmd {
 	case "":
 	case "block":
